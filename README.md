@@ -11,7 +11,7 @@ For questions and remarks: benjamin.campforts@kuleuven.be
 ## How to use this repository ##
 * Fork repository to your own GitHub account
 * Commit changes to your own fork 
-* Make a pull request to the master branch once you are happy with the result
+* Make a pull request to the master branch once you are happy with the result 
 * Make sure to respect the structure of the main repository. Each exercise goes in one folder where both scripts and functions are collected. 
 * Different solutions to the same problem are allowed. But, if your alternative solution is an adjustment/improvement/correction of an existing solution, make sure to adjust the exisitng commit rather than doing a new pull request. 
 * Make sure to **NOT REMOVE** any of the content. 
