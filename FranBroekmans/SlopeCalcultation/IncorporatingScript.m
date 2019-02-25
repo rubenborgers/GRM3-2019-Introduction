@@ -27,7 +27,7 @@ calculationType = input(prompt, 's');
 switch calculationType
     case 'matrix'
         tic
-        imagesc(slope(myDEM, 1));
+        imagesc(slope(myDEM));
         toc
     case 'loop'
         tic
