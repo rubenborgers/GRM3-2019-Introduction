@@ -1,5 +1,5 @@
 
-function [slope] = slope(myDEM,res)
+function [slope] = slope(myDEM)
 %Calculates the slope for all non-border values.
 sizerow=size(myDEM, 1);
 sizecolumn=size(myDEM,2);
