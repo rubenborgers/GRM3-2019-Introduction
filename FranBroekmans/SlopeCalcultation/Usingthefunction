@@ -1,0 +1,5 @@
+clearvars
+load('dem.mat'); 
+imagesc(dem);
+
+slope(dem,6,2)
