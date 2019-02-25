@@ -1,24 +1,11 @@
 
-function slopematrix=slope(DEM,PositionFirstName,PositionSurname) 
-r1=PositionFirstName*10;
-r2=r1+r1*2;
-c1=5*PositionSurname;
-c2=c1+c1*3;
-myDEM=DEM(60:180, 10:40);
+function [slope] = slope(DEM,ny,nx,res)
+%Calculates the slope for all non-border values.
+dzdx = zeros(ny,nx);
+dzdy = zeros(ny,nx);
+dzdx(2:ny-1,2:nx-1) = (DEM(2:ny-1,3:nx)-DEM(2:ny-1,1:nx-2))/(2.0*res);
+dzdy(2:ny-1,2:nx-1) = (DEM(1:ny-2,2:nx-1)-DEM(3:ny,2:nx-1))/(2.0*res);
+slope = sqrt((dzdx.^2.0)+(dzdy.^2.0));
 
-sizerow=size(myDEM, 1);
-sizecolumn=size(myDEM,2);
-slopematrix=zeros(sizerow, sizecolumn);
+end
 
-%nestedforloopsslope
-for row=2:sizerow-1 %nugaatgenaarbeneden
-    for column=2:sizecolumn-1
-        xslope= myDEM(row,column-1)-myDEM(row,column+1);
-        yslope= myDEM(row-1,column)-myDEM(row+1,column);
-        slope=sqrt((xslope/180)^2+(yslope/180)^2);
-        slopematrix(row,column)=slope;
-    end
-end
-imagesc(slopematrix)
-end
-        
