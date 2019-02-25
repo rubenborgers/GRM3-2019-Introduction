@@ -1,5 +1,5 @@
 
-function slopecalculation (DEM,PositionFirstName, PositionSurname) 
+function slopematrix=functionslopecalculation(DEM,PositionFirstName,PositionSurname) 
 r1=PositionFirstName*10;
 r2=r1+r1*2;
 c1=5*PositionSurname;
