@@ -2,4 +2,4 @@ clearvars
 load('dem.mat'); 
 imagesc(dem);
 
-functionslopecalculation(dem,6,2)
+slope(dem,6,2)
