@@ -19,7 +19,9 @@ For questions and remarks: benjamin.campforts@kuleuven.be
 ## Links ##
 Links which might be helpfull for this course/repository. Feel free to add. 
 
-[How markdown works!](https://guides.github.com/features/mastering-markdown/#examples)
+[How markdown works](https://guides.github.com/features/mastering-markdown/#examples)
+
+[Syncing-your-fork-to-the-original-repository-via-the-browser](https://github.com/KirstieJane/STEMMRoleModels/wiki/Syncing-your-fork-to-the-original-repository-via-the-browser)
 
 
 ## Content ##
